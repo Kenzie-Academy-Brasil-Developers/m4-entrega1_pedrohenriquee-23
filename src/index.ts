@@ -2,7 +2,7 @@ import { IProduct, IProductService } from "./interfaces";
 
 class ProductList implements IProductService {
     private productList: IProduct[] = [];
-    private id: number = 1;
+    id: number = 1;
 
     createProduct(data: { name: string; price: number; }): IProduct {
         const { name, price } = data;
